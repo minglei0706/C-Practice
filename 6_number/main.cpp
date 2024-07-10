@@ -56,6 +56,7 @@ int main()
         b[i] = a[i] / suma * total; // Calculate the amount of money each person gets based on the random numbers
         sumb += round(b[i] * 100) / 100.0; // Round to two decimal places
         // Output information
+        //setw is used to set the width of the output, fixed and setprecision are used to format the output
         cout << "Person " << setw(3) << i + 1 << " gets: " << setw(6) 
              << fixed << setprecision(2) << round(b[i] * 100) / 100.0 << endl;
     }
